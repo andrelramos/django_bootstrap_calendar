@@ -1,6 +1,7 @@
 from django import template
 from django.conf import settings
 from django.utils.safestring import mark_safe
+from django_bootstrap_calendar import help_texts
 try:
     from django.utils.encoding import force_unicode as force_text
 except ImportError:  # python3
@@ -27,11 +28,10 @@ def bootstrap_calendar(calendar_id, language, events):
                 <button class="btn btn-warning" data-calendar-view="day">Dia</button>
             </div>
         </div>
-
         <br><br>
-
         <div id="%s"></div>
-    ''' % calendar_id
+        %s
+    ''' % (calendar_id, help_texts.CLASS_HELP)
 
     js = '''
         <script>
