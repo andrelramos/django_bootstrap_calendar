@@ -34,4 +34,5 @@ We need store some data to boostrap_calendar works well then you can use Bootstr
     class Exemple(BootstrapCalendarModel):
         img = models.ImageField(upload_to='imagens_upload/', null=True, blank=True)
         
-With above code, you earn all atributes necessary to work with bootstrap_calendar and an extra field named img.
+With above code, you earn all atributes necessary to work with bootstrap_calendar and an extra field named img. 
+Now you are prepared to build a rest API as specified by bootstrap_calendar project (More details: https://github.com/Serhioromano/bootstrap-calendar#feed-url)
