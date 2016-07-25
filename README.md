@@ -21,7 +21,7 @@ Now just load the calendar:
     
 # Configurations
 
-## Where is showed texts
+## Where is the texts
 You may want to change texts of calendar subtitles and buttons, but to do this you need know where are.
 
  - In project root, has a file called help_texts.py. That stores texts of subtitle on constant `EVENT_CLASS`.
